@@ -13,9 +13,6 @@ app.use(express.static(__dirname + "/static"));
 
 app.get('/', router.index);
 
-app.get('/github-response', function(req, res) {
-  console.log("Received request for /github-response");
-  router.githubResponse(req, res);
-});
+app.get('/github-response', router.githubResponse);
 app.get('/signup-success', router.signUpSuccess);
 app.get('/signup-fail', router.signUpFail);

@@ -1,4 +1,9 @@
 <% layout('layout') -%>
+<% if ( typeof(clientId) !== "undefined" ) { %>
+<script>
+var clientId = <%-clientId%>;
+</script>
+<% } %>
 
 <div id="container">
   <section id="intro">

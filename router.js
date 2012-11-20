@@ -1,7 +1,9 @@
-var signup = require('./signup.js');
+var signup = require('./signup.js'),
+    githubConfig = require('./githubConfig.js');
 
 function index(req, res) {
   res.render('index.ejs', {
+    clientId : githubConfig.clientId,
     scripts : {
       local : [
         "index.js"
