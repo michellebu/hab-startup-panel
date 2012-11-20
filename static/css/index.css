@@ -1,0 +1,259 @@
+/* fonts */
+@font-face {
+  font-family: 'Code-Pro-Demo';
+  src: url('/css/webfonts/16CC75_0.eot');
+  src: url('/css/webfonts/16CC75_0.eot?#iefix') format('embedded-opentype'),
+       url('/css/webfonts/16CC75_0.woff') format('woff'),
+       url('/css/webfonts/16CC75_0.ttf') format('truetype'),
+       url('/css/webfonts/16CC75_0.svg#wf') format('svg');
+}
+
+@font-face {
+  font-family: 'Code-Pro-Light-Demo';
+  src: url('/css/webfonts/16CC75_1.eot');
+  src: url('/css/webfonts/16CC75_1.eot?#iefix') format('embedded-opentype'),
+       url('/css/webfonts/16CC75_1.woff') format('woff'),
+       url('/css/webfonts/16CC75_1.ttf') format('truetype'),
+       url('/css/webfonts/16CC75_1.svg#wf') format('svg');
+}
+
+/* eric meyer's reset.css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define visible focus styles! 
+:focus {
+	outline: ?????;
+} */
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end reset */
+
+/* general */
+a {
+  color : #333;
+  transition : all 0.5s;
+  text-decoration:none;
+}
+
+a:hover {
+  text-shadow : 0px 0px 2px #111;
+}
+
+/* body */
+body {
+  font-family : Open Sans, Segoe UI, Myriad Pro, sans-serif;
+  background : #fafafa;
+  background-image : url('texture.png');
+}
+
+/* header */
+header {
+  width : 500px;
+  margin : 10px auto 10px auto;
+  box-shadow : 0px 0px 2px 2px #eee;
+  background : #fefefe;
+}
+
+header h1 {
+  text-align : center;
+  letter-spacing : 0.02em;
+  text-shadow : 0px 0px 3px #ccc;
+}
+
+#club-name {
+  padding : 0.25em 0 0 0;
+  font-family : "Code-Pro-Demo", monospace;
+  font-size : 1.5em;
+}
+
+#event-name {
+  padding : 0.25em 0 0.75em 0;
+  font-size : 3em;
+  font-family : "Code-Pro-Light-Demo", monospace;
+  font-weight : lighter;
+}
+
+#name-color-1 { color : #000000; }
+#name-color-2 { color : #A5D500; }
+
+nav li {
+  display : inline-block;
+  padding : 0px 50px 20px 50px;
+}
+
+/* home page */
+#container {
+  width : 100%;
+}
+
+#intro h3 {
+  padding-top : 20px;
+  text-align : center;
+  font-family : "Italianno", Vivaldi, Freestyle Script, Segoe Script, Monotype Corsiva, French Script MJ;
+  font-size : 2em;
+  color : #666;
+}
+
+#container section {
+  width : 800px;
+  margin : 0 auto 20px auto;
+  line-height : 1.5em;
+}
+
+#container section h1 {
+  font-size : 2em;
+  font-family : "Code-Pro-Demo", monospace;
+  padding-bottom : .75em;
+  display : block;
+}
+
+/* startups */
+.startup div {
+  display : inline-block;
+  width : 246px;
+  height : 150px;
+  margin : 10px;
+
+  color : #444;
+
+  text-align : center;
+  line-height : 130px;
+  font-size : 2em;
+  font-family : "Code-Pro-Demo", monospace;
+
+  box-shadow : inset 0px 0px 30px 6px #e9e9e9, 0px 0px 10px 1px #e9e9e9;
+  background : #eee;
+  transition-property : box-shadow, background;
+  transition-duration : 0.5s;
+}
+
+.startup div:hover {
+  background : #f9f9f9;
+  box-shadow : inset 0px 0px 30px 6px #efefef, 0px 0px 10px 1px #e9e9e9;
+  cursor : pointer;
+}
+
+.startup div:active {
+  background : #eee;
+  box-shadow : inset 0px 0px 30px 6px #ddd;
+}
+
+.startup:hover {
+  text-shadow : none; /* remove default link hover */
+}
+
+#boring-details dl {
+  width : 400px;
+  overflow : hidden;
+}
+
+#boring-details dl dt, #boring-details dl dd {
+  line-height : 2em;
+  float : left;
+  display : inline-block;
+}
+#boring-details dl dt {
+  font-weight : 700;
+  width : 70px;
+}
+#boring-details dl dd {
+  width : 330px;
+}
+
+/* github-login button */
+#github-login {
+  margin : 2em auto 0 auto;
+  padding : 5px;
+  display : block;
+  width : 80px;
+  height : 30px;
+  line-height : 30px;
+  color : #eee;
+  background : #222;
+  box-shadow : 0px 0px 10px 1px #999;
+  text-align : center;
+  transition-property : box-shadow, background;
+  transition-duration : 0.5s;
+}
+
+#github-login:hover {
+  background : #333;
+}
+
+#github-login:active {
+  box-shadow : inset 0px 0px 10px 1px #222;
+  background : #333;
+}
+
+/* signed up */
+#signed-up-div {
+  width : 100%;
+  height : 50px;
+  line-height : 50px;
+  color : #eee;
+  text-align : center;
+  box-shadow : 0px 0px 2px 2px #ddd;
+  background : #333;
+  background-image: url('texture-black.png');
+  margin : 0 auto;
+}
+
+#signed-up-div a {
+  color : #bbb;
+  transition : all 0.5s;
+}
+
+#signed-up-div a:hover {
+  color : #999;
+  text-shadow : 0px 0px 0.5px #333;
+}

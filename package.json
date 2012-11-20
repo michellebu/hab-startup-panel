@@ -1,0 +1,15 @@
+{
+  "name": "startup-talk-2012",
+  "version": "0.0.0",
+  "description": "startups talk",
+  "main": "app.js",
+  "repository": "",
+  "author": "Achal Dave",
+  "license": "BSD",
+  "dependencies": {
+    "express": "~3.0.3",
+    "ejs-locals": "~1.0.2",
+    "oauth": "~0.9.8",
+    "mongodb": "~1.2.0"
+  }
+}

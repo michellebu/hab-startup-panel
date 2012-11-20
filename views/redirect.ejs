@@ -1,0 +1,9 @@
+<% layout('layout') -%>
+<script>
+<% if (githubSuccess) { %>
+  window.opener.location = '/signup-success';
+<% } else { %>
+  window.opener.location = '/signup-fail';
+<% } %>
+window.close();
+</script>
