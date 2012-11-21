@@ -10,6 +10,6 @@
     "express": "2.5.11",
     "ejs": "",
     "oauth": "~0.9.8",
-    "mongodb": "~1.2.0"
+    "mongodb": ""
   }
 }
