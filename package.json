@@ -7,10 +7,12 @@
   "author": "Achal Dave",
   "license": "BSD",
   "dependencies": {
-    "node": "0.6.13",
     "express": "2.5.11",
     "ejs": "",
     "oauth": "~0.9.8",
     "mongodb": ""
+  },
+  "engines": {
+    "node": "0.6.13"
   }
 }
