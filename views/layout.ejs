@@ -4,6 +4,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="css/index.css">
 <link href='http://fonts.googleapis.com/css?family=Italianno' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,800italic,400,300,800' rel='stylesheet' type='text/css'>
 <% 
 if (typeof(styles) !== "undefined" && styles.external) {
   styles.external.forEach(function(style) { %>
@@ -21,7 +22,7 @@ if (typeof(styles) !== "undefined" && styles.local) {
 
 <body>
 
-<div id="mainContainer">
+<div id="headerwrap">
   <header>
     <h1 id="club-name">
       <a href="http://www.hackersatberkeley.com">
@@ -29,9 +30,41 @@ if (typeof(styles) !== "undefined" && styles.local) {
       </a>
     </h1>
     <h1 id="event-name">
-      <a href="/">Startup Talk</a>
+      <a href="/"><img src="founderlogo.png"></a>
     </h1>
   </header>
+
+  <div id="tagline">
+    Where the founders answer all your questions.<br>
+    <dl>
+      <dt>Where?</dt>
+      <dd>The Woz, Soda Hall</dd>
+      <dt>When?</dt>
+      <dd>Dec 1<sup>st</sup>, 2pm</dd>
+      <dt>Why?</dt>
+      <dd>Because you want to build great things.</dd>
+    </dl>
+  </div>
+
+
+  <div id="clicktolearnmore">
+    Click below to learn more about the companies.
+  </div>
+  <div id="scroll">
+  </div>
+  <div id="companylogos"><a href="#scroll">
+    <img src="/stripe.png" id="stripe">
+    <img src="/leap.png" id="leap">
+    <img src="/tagstand.png" id="tagstand">
+    <img src="/quizlet.png" id="quizlet">
+    <img src="/flutter.png" id="flutter">
+    <img src="/yardsale.png" id="yardsale">
+    <img src="/betable.png" id="betable">
+    <img src="/famous.png" id="famous"></a>
+    <img src="/hack.png" id="hack">
+  </div>
+</div>
+<div id="mainContainer">
   <!--
   <nav>
     <ul>
@@ -42,6 +75,21 @@ if (typeof(styles) !== "undefined" && styles.local) {
   -->
   <%- body %>
 </div>
+
+
+<footer>
+<div id="rel">
+  <div id="stick">
+  <div id="rsvp">RSVP with your Github account. Don't have one?  Just head over to <a
+  href="https://github.com">Github</a> and make one&mdash;it'll fill your
+  life with hack flavored ice cream.
+  </div>
+  <div id="button">
+  <a style="cursor:pointer" id="github-login">Sign up</a>
+</div>
+</div>
+</div>
+</footer>
 
 <% 
 if (typeof(scripts) !== "undefined" && scripts.external) {

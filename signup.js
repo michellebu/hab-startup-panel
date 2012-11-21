@@ -7,9 +7,11 @@ var https = require('https'),
     githubConfig = require('./githubConfig'),
     collection;
 
-db.open(function(){
-  collection = db.collection(dbConfig.collectionName);
-  collection.createIndex('login', { unique : true , dropDups: true}, function() {}); // unique github usernames
+db.open(function(err, p_client){
+  db.authenticate(dbConfig.user, dbConfig.password, function(err, p_client) { 
+    collection = db.collection(dbConfig.collectionName);
+    collection.createIndex('login', { unique : true , dropDups: true}, function() {}); // unique github usernames
+  }); 
 });
 
 https.globalAgent.options.secureProtocol = 'SSLv3_method';
