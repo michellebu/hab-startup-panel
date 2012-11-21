@@ -7,8 +7,8 @@
   "author": "Achal Dave",
   "license": "BSD",
   "dependencies": {
-    "express": "~3.0.3",
-    "ejs-locals": "~1.0.2",
+    "express": "2.5.11",
+    "ejs": "",
     "oauth": "~0.9.8",
     "mongodb": "~1.2.0"
   }
