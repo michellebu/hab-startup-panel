@@ -96,6 +96,10 @@ body {
   background-image : url('texture.png');
 }
 
+strong {
+	font-weight: 700;
+}
+
 /* header */
 #headerwrap {
 	-webkit-box-shadow: inset 0 -8px 15px -6px rgba(0,0,0,0.8);
