@@ -1,116 +1,16 @@
 <% layout('layout') -%>
 <% if ( typeof(clientId) !== "undefined" ) { %>
 <script>
-var clientId = <%-clientId%>;
+var clientId = '<%- clientId %>';
 </script>
 <% } %>
-<div id="container">
-<div class="companydesc" id="dstripe">
-<h1>John Collison</h1>
-<h2>Co-founder of Stripe</h2>
-<img src="jc.png">
-In 2007, Collison founded "Shuppa" with his brother Patrick Collison in Limerick, Ireland. The company later merged with Auctomatic, which was funded by Y Combinator, and Collison moved to Silicon Valley. Auctomatic was a software company that built tools for the eBay platform. The company was also funded by Chris Sacca. Auctomatic was acquired for $5 million in March 2008, when Collison was 17.<br><br>
-In 2009, Collison (having returned to finish secondary school at Castletroy College) scored 10 A grades in the Irish Leaving Certificate examination. At 980 points, this was the highest-ever CAO score received by a student sitting the Leaving Certificate. He continued to study at Harvard University, commencing his studies in September 2009.
-<br><br>
-Collison is also a pilot and a pianist.<br><br>
-In 2010, John cofounded Stripe, which received backing from Peter Thiel, Elon Musk and Sequoia Capital.
-<br><br>
-<span class="source">Source: Wikipedia</span><br>
-<a href="http://stripe.com">Stripe</a>
+
+
+  <div id="rsvp">RSVP with your Github account. Don't have one?  Just head over to <a
+  href="https://github.com">Github</a> and make one&mdash;it'll fill your
+  life with hack flavored ice cream.
+  </div>
+  <div id="button">
+  <a style="cursor:pointer" id="github-login">Sign up</a>
 </div>
 
-<div class="companydesc" id="dleap">
-<h1>David Holz</h1>
-<h2>Co-founder and CTO of LeapMotion</h2>
-<img src="dh.jpg">
-Leap Motion (previously OcuSpec) is a stealth company currently developing motion control technology that is radically more powerful and also significantly less costly than existing technology.
-<br><br>
-<span class="source">Source: Crunchbase</span><br>
-<a href="http://leapmotion.com">LeapMotion</a>
-<div class="clear"></div>
-</div>
-
-<div class="companydesc" id="dtagstand">
-<h1>Kulveer Taggar</h1>
-<h2>Co-founder of Tagstand</h2>
-<img src="kt.jpg" width="300px">
-Kulveer Taggar is a British entrepreneur who was the CEO of Auctomatic, a start-up he co-founded with Harjeet Taggar and Patrick Collison. In 2008, he gained international press coverage when he sold the company for $5 million at the age of 24.
-<br><br>
-Previously he was a BBC columnist and Deutsche Bank banker.
-<br><br>
-From a TC article on Tagstand: Tagstand offers to ship custom NFC stickers within less than 24 hours (plus however long it takes to ship them). And they’re also making the tags “smart” by offering a bit.ly-like short URL service that’ll let you track when each one is used. Each sticker runs around $1, which seems to be around what other sites are charging for small batches.
-<br><br>
-The short-URL feature is pretty straightforward: when you place your order, Tagstand will associate each sticker with a unique URL. Then, once you receive your stickers, you can log into the site’s dashboard and configure where you’d like each of these short URLs to point to (the upshot to this is that you can change the URL even once the stickers are deployed in the field). The site also provides analytics on how often each of these stickers is used.
-<br><br>
-<span class="source">Source: Wikipedia</span><br>
-<a href="http://tagstand.com">Tagstand</a>
-</div>
-
-<div class="companydesc" id="dquizlet">
-<h1>Andrew Sutherland</h1>
-<h2>Founder and CTO of Quizlet</h2>
-<img src="as.jpg" width="300px">
-Andrew founded Quizlet while a sophomore at Albany High School in California and is actively involved in leading the Quizlet team, developing the product and technology vision, and making sure the Quizlet user experience is great. He's currently on leave from MIT.<br><br>
-Quizlet’s mission is to build beautiful, simple software that helps students learn and teachers teach. Created by Andrew Sutherland in October 2005 to study high school French vocabulary, Quizlet.com is now one of the largest educational sites in the world. Over 7 million unique visitors per month, from grade school to grad school, study a wide range of subjects using Quizlet’s learning tools and games.
-<br><br>
-<span class="source">Source: Crunchbase, Quizlet.com</span><br>
-<a href="http://quizlet.com">Quizlet</a><br>
-</div>
-
-<div class="companydesc" id="dflutter">
-TBA
-<br><br>
-<a href="http://flutterapp.com">Flutter</a>
-</div>
-
-<div class="companydesc" id="dyardsale">
-<h1>Ed McManus</h1>
-<h2>Co-founder and CTO of Yardsale</h2>
-<img src="em.png">
-Yardsale, a mobile app to help folks sell goods to local buyers. It enables users to easily list items for sale, hopes to take on other local marketplaces by reducing the friction associated with creating listings, and then dealing with flaky buyers afterward.
-<br><br>
-<span class="source">Source: Crunchbase</span><br>
-<a href="http://getyardsale.com">Yardsale</a>
-<div class="clear"></div>
-</div>
-
-<div class="companydesc" id="dbetable">
-<img src="cg.jpg" width="300px">
-<h1>Chris Griffin</h1>
-<h2>Founder and CEO of Betable</h2>
-Betable, the real-money gaming platform, is reinventing entertainment by merging the worlds of gaming and casino-based entertainment. Betable provides the license, support and infrastructure that allow developers to legally integrate real-money gaming into their mobile and social games and applications. Betable is dedicated to providing players with world-leading security, player location and identity verification to keep their funds safe and to ensure responsible gaming. The company is privately held and is headquartered in London, England with an office in San Francisco, California.
-<br><br>
-<span class="source">Source: Crunchbase</span><br>
-<a href="http://betable.com">Betable</a>
-</div>
-
-<div class="companydesc" id="dfamous">
-<h1>Steve Newcomb</h1>
-<h2>Founder of famo.us</h2>
-<img src="sn.jpg">
-Famo.us is led by Steve Newcomb, who is best known for founding Powerset, which was sold to Microsoft and is now part of Bing. Famo.us was started in 2011 and is well funded by some of the most prominent entrepreneurs and venture capital companies in the Valley.
-<br><br>
-Famo.us is building a development infrastructure that enables developers to create 2D and 3D gesture based interfaces and deploy them to any mobile, desktop or living room device.
-<br><br>
-<span class="source">Source: Crunchbase</span><br>
-<a href="http://famo.us">famo.us</a><br>
-<a href="http://www.crunchbase.com/person/steve-newcomb">Steve Newcomb on Crunchbase</a>
-</div>
-<div class="companydesc" id="dhack"></div>
-</div>
-<div id="push"></div>
-
-<script>
-$(document).ready(function() {
-  $('#companylogos img').click(function() {
-    var company = $('#d' + $(this).attr('id'));
-    $('.companydesc').stop().slideUp();
-      $(company).stop().slideDown(function() {
-        $('html, body').animate({
-          scrollTop: $("#scroll").offset().top
-        }, 200);
-    
-      });
-  });
-});
-</script>
